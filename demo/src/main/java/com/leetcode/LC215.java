@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 
-// O
+// O(nlogn) : in-place sort
 class LC215_Solution2 {
 
     public static int main(int[] nums, int k) {
@@ -14,6 +14,7 @@ class LC215_Solution2 {
     }
 }
 
+// O(nlogn) : max-heap using -1*elm
 class LC215_Solution1 {
 
     public static int main(int[] nums, int k) {
