@@ -42,7 +42,7 @@ public class CreateLinkedList {
         }
     }
 
-    public static void traverse(ListNode head) {
+    public static void traverseLL(ListNode head) {
         ListNode node = head;
         while(node != null) {
             System.out.println(node.val);
@@ -53,7 +53,11 @@ public class CreateLinkedList {
     public static void main(String[] args) {
         int[] nums = {1};
         // Node head = create(nums);
+        // traverse(head);
+
         ListNode head = createLL(nums);
-        traverse(head);
+        traverseLL(head);
+
+
     }
 }
