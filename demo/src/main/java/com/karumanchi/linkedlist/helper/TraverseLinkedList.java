@@ -1,5 +1,8 @@
 package com.karumanchi.linkedlist.helper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TraverseLinkedList {
     
     public static void traverse(Node head) {
@@ -10,12 +13,16 @@ public class TraverseLinkedList {
         }
     }
 
-    public static void traverseLL(ListNode head) {
+    public static int[] traverseLL(ListNode head) {
+        List<Integer> ans = new ArrayList<>();
+        
         ListNode node = head;
         while(node != null) {
-            System.out.println(node.val);
+            // System.out.println(node.val);
+            ans.add(node.val);
             node = node.next;
         }
+        return ans.stream().mapToInt(i -> i).toArray();
     }
     
 }
