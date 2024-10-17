@@ -1,4 +1,4 @@
-package com.karumanchi.linkedlist;
+package com.karumanchi.linkedlist.helper;
 
 public class Node {
 
