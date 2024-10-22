@@ -1,5 +1,7 @@
+// https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75
 package com.leetcode;
 
+// O(N) 2 pointer solution : can be optimized, using single while loop
 class LC1768_Solution1 {
     public static String main(String word1, String word2) {
         StringBuilder sb = new StringBuilder();
