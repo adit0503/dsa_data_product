@@ -1,10 +1,28 @@
 package com.leetcode;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
 public class LC_Tests {
+
+    @Test
+    public void lc88_test() {
+        int[] nums1 = new int[]{1,2,3,0,0,0};
+        int m = 3;
+        int[] nums2 = new int[]{2,5,6};
+        int n = 3;
+        LC88_Solution1.main(nums1,m,nums2,n);
+        assertArrayEquals(nums1, new int[]{1,2,2,3,5,6});
+
+        nums1 = new int[]{1};
+        m = 1;
+        nums2 = new int[]{};
+        n = 0;
+        LC88_Solution1.main(nums1, m, nums2, n);
+        assertArrayEquals(nums1, new int[]{1});
+    }
 
     @Test
     public void lc1768_test() {

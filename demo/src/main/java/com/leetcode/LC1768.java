@@ -3,7 +3,8 @@ package com.leetcode;
 
 // O(N) 2 pointer solution : can be optimized, using single while loop
 class LC1768_Solution1 {
-    public static String main(String word1, String word2) {
+    
+    static String main(String word1, String word2) {
         StringBuilder sb = new StringBuilder();
 
         char[] c1 = word1.toCharArray();
