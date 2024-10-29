@@ -8,6 +8,17 @@ import org.junit.jupiter.api.Test;
 public class LC_Tests {
 
     @Test
+    public void lc1071_test() {
+        assertEquals(LC1071.solution("ABCABC", "ABC"), "ABC");
+        assertEquals(LC1071.solution("ABABAB", "ABAB"), "AB");
+        assertEquals(LC1071.solution("LEET", "CODE"), "");
+        assertEquals(LC1071.solution("ABCDEF", "ABC"), "");
+        assertEquals(LC1071.solution("AAAAAAAAA", "AAACCC"), "");
+        assertEquals(LC1071.solution("TAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"), "TAUXX");
+
+    }
+
+    @Test
     public void LC283_test(){
         int[] nums = new int[]{0,1,0,3,12};
         LC283.solution(nums);
