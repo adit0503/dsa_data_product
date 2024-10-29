@@ -8,6 +8,17 @@ import org.junit.jupiter.api.Test;
 public class LC_Tests {
 
     @Test
+    public void LC283_test(){
+        int[] nums = new int[]{0,1,0,3,12};
+        LC283.solution(nums);
+        assertArrayEquals(nums, new int[]{1,3,12,0,0});
+
+        nums = new int[]{0};
+        LC283.solution(nums);
+        assertArrayEquals(nums, new int[]{0});
+    }
+
+    @Test
     public void lc88_test() {
         int[] nums1 = new int[]{1,2,3,0,0,0};
         int m = 3;
